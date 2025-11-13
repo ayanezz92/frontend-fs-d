@@ -6,7 +6,7 @@ const API_URL="https://backend-fs-d-qa7b.onrender.com/api/personas";
 function PersonaList(){
     const [personas, setPersonas]=useState([]);
     const cargar = async () => {
-        const res = await axios.get(API_URL+"personas");
+        const res = await axios.get(API_URL);
         setPersonas(res.data);
     };
 
