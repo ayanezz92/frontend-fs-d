@@ -20,7 +20,7 @@ function PersonaList(){
 
     return(
         <ul className="list-group">
-            {personas.map((persona)=>(
+            {personas.map(p => (
                 <li key={p.id} className="List-group-item d-flex justify-content-between">
                     {p.nombre}
                     <button className=" btn btn-danger btn-sm" onClick={() =>eliminar(p.id)}>Eliminar</button>
